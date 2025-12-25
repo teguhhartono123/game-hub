@@ -9,7 +9,7 @@ import "./index.css";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <ChakraProvider value={theme}>
-      <ColorModeProvider forcedTheme="dark">
+      <ColorModeProvider>
         <App />
       </ColorModeProvider>
     </ChakraProvider>
