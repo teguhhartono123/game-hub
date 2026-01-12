@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import apiClient from "../services/api-client";
 import { CanceledError } from "axios";
 
-
 interface FetchResponse<T> {
   count: number;
   results: T[];
@@ -15,7 +14,6 @@ const useData = <T>(endpoint: string) => {
 
   useEffect(() => {
     const controller = new AbortController();
-
 
     setLoading(true);
     apiClient
