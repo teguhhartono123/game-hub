@@ -2,7 +2,7 @@ import type { Game } from '../hooks/useGames'
 import { Card, CardBody, Heading, HStack, Image } from '@chakra-ui/react'
 import PlatformiconList from './PlatformiconList'
 import CriticScore from './CriticScore'
-import Emoji from './emoji'
+import Emoji from './Emoji'
 
 
 interface Props{
