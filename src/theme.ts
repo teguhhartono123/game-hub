@@ -11,31 +11,34 @@ const config = defineConfig({
 // createSystem replaces extendTheme
 export default createSystem(defaultConfig, config)
 
+//--------------------------
 
 // import { createSystem, defaultConfig, defineConfig } from "@chakra-ui/react"
 
 // const config = defineConfig({
 //   theme: {
+//     // semanticTokens ensure these colors work in Dark Mode
 //     semanticTokens: {
 //       colors: {
 //         gray: {
-//           // RAWG's main background is often #151515
-//           // Cards and sidebars are often #202020
-//           50: { value: "#f3f3f3" },
-//           100: { value: "#d9d9d9" },
-//           200: { value: "#bfbfbf" },
-//           300: { value: "#a6a6a6" },
-//           400: { value: "#8c8c8c" },
-//           500: { value: "#737373" },
-//           600: { value: "#595959" },
-//           700: { value: "#333333" }, // Lighter borders/dividers
-//           800: { value: "#202020" }, // Card backgrounds
-//           900: { value: "#151515" }, // Deep sidebar/Main background
-//           950: { value: "#0b0b0b" }  // Purest black areas
-//         }
-//       }
-//     }
-//   }
+//           50: { value: "#f9f9f9" },
+//           100: { value: "#ededed" },
+//           200: { value: "#dedede" },
+//           300: { value: "#b3b3b3" },
+//           400: { value: "#a0a0a0" },
+//           500: { value: "#898989" },
+//           600: { value: "#6c6c6c" },
+//           700: { value: "#202020" }, 
+//           800: { value: "#121212" }, 
+//           900: { value: "#111" },
+//           950: { value: "#151515" }, // Main background color for RAWG
+//         },
+//       },
+//     },
+//   },
 // })
 
-// export default createSystem(defaultConfig, config)
+// // createSystem is the v3 replacement for extendTheme
+// const theme = createSystem(defaultConfig, config)
+
+// export default theme
