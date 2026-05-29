@@ -2,7 +2,7 @@ name: Trigger Playwright Tests on Push
 
 on:
   push:
-    branches: [ main, master ] # Fires when you push to main
+    branches: [ main, master ]
 
 jobs:
   ping-test-repo:
@@ -14,4 +14,4 @@ jobs:
                -H "Accept: application/vnd.github.v3+json" \
                -X POST \
                -d '{"event_type": "run-playwright"}' \
-               
+               https://github.com
