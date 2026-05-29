@@ -12,6 +12,7 @@ jobs:
         run: |
           curl -H "Authorization: token ${{ secrets.DISPATCH_TOKEN }}" \
                -H "Accept: application/vnd.github.v3+json" \
+               -H "User-Agent: teguhhartono123-game-hub" \
                -X POST \
                -d '{"event_type": "run-playwright"}' \
-               https://github.com
+               
