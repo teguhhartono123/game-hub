@@ -13,7 +13,7 @@ const ColorModeSwitch = () => {
         fontSize="14px"
         fontWeight="500"
         userSelect="none"
-        >Dark Modee</Text>
+        >Dark Mode</Text>
     </HStack>
   )
 }
