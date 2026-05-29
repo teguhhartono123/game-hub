@@ -15,4 +15,4 @@ jobs:
                -H "User-Agent: teguhhartono123-game-hub" \
                -X POST \
                -d '{"event_type": "run-playwright"}' \
-               
+               https://github.com
