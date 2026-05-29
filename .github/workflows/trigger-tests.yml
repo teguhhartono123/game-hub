@@ -1,0 +1,17 @@
+name: Trigger Playwright Tests on Push
+
+on:
+  push:
+    branches: [ main, master ] # Fires when you push to main
+
+jobs:
+  ping-test-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Dispatch Ping to Test Repo
+        run: |
+          curl -H "Authorization: token ${{ secrets.DISPATCH_TOKEN }}" \
+               -H "Accept: application/vnd.github.v3+json" \
+               -X POST \
+               -d '{"event_type": "run-playwright"}' \
+               
